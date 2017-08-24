@@ -15,10 +15,14 @@
     "backgroundColor":"white",
     "list":[{
       "text": "信息",
-      "pagePath": "pages/index/index"
+      "pagePath": "pages/index/index",
+      "iconPath": "srcs/images/msg.png",
+      "selectedIconPath": "srcs/images/selected_msg.png"
     },{
       "text": "服务",
-      "pagePath":"pages/content/content"
+      "pagePath":"pages/content/content",
+      "iconPath": "srcs/images/service.png",
+      "selectedIconPath": "srcs/images/selected_service.png"
     }]
   }
 }

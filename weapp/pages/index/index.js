@@ -6,7 +6,18 @@ Page({
    */
   data: {
     name:"星云创新工作室",
-    
+    imgUrls: [
+      '../../srcs/images/index_logo.png'
+    ],
+    show_img: "../../srcs/images/show.png",
+    intro_img: "../../srcs/images/intro.png",
+    add_img: "../../srcs/images/add.png",
+    wechat_img: "../../srcs/images/wechat.png",
+    phone_img: "../../srcs/images/phone.png",
+    artcle_img: "../../srcs/images/article.png",
+    xiao_img: "../../srcs/images/xiao.png",
+    cheng_img: "../../srcs/images/cheng.png",
+    xu_img: "../../srcs/images/xu.png",
   },
 
   /**

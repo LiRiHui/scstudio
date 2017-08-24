@@ -1,13 +1,12 @@
 /* pages/index/index.wxss */
-
-swiper-item video{
+.page {
   width: 100%;
   height: 100%;
 }
 
 .banner-field{
-  width: 750rpx;
-  height: 450rpx;
+  width: 100%;
+  height: 350rpx;
 }
 
 .banner-field swiper{
@@ -15,14 +14,57 @@ swiper-item video{
   height: 100%;
 }
 
+.slide-image{
+  width:100%;
+  height: 100%;
+}
+
 .action-field{
-  background-color: whitesmoke;
-  height: 200rpx;
-  width: 750rpx;
+  height: 160rpx;
+  width: 100%;
+  background-color: #fffbf4;
+}
+
+.action-field image{
+  height: 100rpx;
+  width: 100rpx;
 }
 
 .action{
   float: left;
   width: 185rpx;
-  height: 185rpx;
+  height: 150rpx;
+  text-align: center;
+}
+
+.promotion-field{
+  width: 100%;
+  height: 700rpx;
+  background-color: #fffbf4;
+}
+
+.artcle-title{
+  width: 100%;
+  height: 90rpx;
+}
+
+.artcle-title image{
+  width: 180rpx;
+  height: 80rpx;
+  margin-left: 280rpx;
+}
+
+.artcle-field{
+  width: 100%;
+  height: 300rpx;
+}
+
+.artcle-field .action{
+  width: 250rpx;
+  height: 300rpx;
+  text-align: center;
+}
+.lable-img{
+  width: 230rpx;
+  height: 230rpx;
 }

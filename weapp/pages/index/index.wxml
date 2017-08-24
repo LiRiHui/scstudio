@@ -1,26 +1,59 @@
 
 <view class="page">
   <view class="banner-field">
-    <swiper>
-      <swiper-item>
-        <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" ></video>>
-      </swiper-item>
-      <swiper-item>
-        sss
-      </swiper-item>
+    <swiper autoplay="true" circular="true">
+      <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+         <image src="{{item}}" class="slide-image" mode="scaleToFit"/>
+        </swiper-item>
+      </block>
     </swiper>
   </view>
+  <!-- banner-field end -->
 
   <view class="action-field">
-    <view class="action">看介绍</view>
-    <view class="action">查地址</view>
-    <view class="action">聊微信</view>
-    <view class="action">打电话</view>
+    <view class="action" bindtap="tapName">
+      <image src="{{intro_img}}" mode="scaleToFit"/>
+      <view>介绍</view>
+    </view>
+    <view class="action" bindtap="tapName">
+      <image src="{{add_img}}" mode="scaleToFit"/>  
+      <view>导航</view>  
+    </view>
+    <view class="action" bindtap="tapName">
+      <image src="{{wechat_img}}" mode="scaleToFit"/>
+      <view>微信</view>
+    </view>
+    <view class="action" bindtap="tapName">
+      <image src="{{phone_img}}" mode="scaleToFit"/>
+      <view>电话</view>
+    </view>
   </view>
+  <!-- action-field end -->
 
   <view class="promotion-field">
     <scroll-view scroll-y>
-    
+      <view class="artcle-title">
+        <image src="{{artcle_img}}" mode="scaleToFit"></image>
+      </view>
+      <view class="artcle-field">
+        <view class="action" bindtap="tapName">
+          <image class="lable-img" src="{{xiao_img}}" mode="scaleToFit"/>
+          <view>
+            介绍
+          </view>
+        </view>
+        <view class="action" bindtap="tapName">
+          <image class="lable-img" src="{{cheng_img}}" mode="scaleToFit"/>  
+          <view>导航</view>  
+        </view>
+        <view class="action" bindtap="tapName">
+          <image class="lable-img"  src="{{xu_img}}" mode="scaleToFit"/>
+          <view>微信</view>
+        </view>
+      </view>
+      <!-- artcle-field end -->
     </scroll-view>
   </view>
+  <!-- promotion-field end -->
 </view>
