@@ -1,2 +1,24 @@
-<!--pages/content/content.wxml-->
-<text>pages/content/content.wxml</text>
+<view class="page">
+ <view class="content-field">
+  <view class="banner-field" bindtap="tapName">
+    <image src="{{sample_logo}}" class="sample-image" mode="scaleToFit"/>
+  </view>
+
+ <scroll-view>
+  <view class="label-field" bindtap="tapName" >
+    <image src="{{price_img}}" class="s-image" mode="scaleToFit"/>
+  </view>
+  <view class="label-field right" bindtap="tapName">
+    <image src="{{file_img}}" class="s-image" mode="scaleToFit"/>
+  </view>
+  <view class="label-field" bindtap="tapName">  
+    <image src="{{file_key_img}}" class="s-image" mode="scaleToFit"/>
+  </view>
+  <view class="label-field right" bindtap="tapName">  
+    <image src="{{about_img}}" class="s-image" mode="scaleToFit"/>
+  </view>
+  </scroll-view>
+
+ </view>
+ <!-- content-field end -->
+</view>

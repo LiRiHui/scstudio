@@ -18,6 +18,10 @@ Page({
     xiao_img: "../../srcs/images/xiao.png",
     cheng_img: "../../srcs/images/cheng.png",
     xu_img: "../../srcs/images/xu.png",
+    little_msg:"../../srcs/images/little_msg.png",
+    little_paper: "../../srcs/images/little_paper.png",
+    little_pen: "../../srcs/images/little_pen.png",
+    recommend_img: "../../srcs/images/recommend.png",
   },
 
   /**
