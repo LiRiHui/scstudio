@@ -37,7 +37,7 @@
         <image src="{{artcle_img}}" mode="scaleToFit"></image>
       </view>
       <view class="artcle-field">
-        <view class="action" bindtap="tapName">
+        <view class="action" bindtap="showPic">
           <image class="lable-img" src="{{xiao_img}}" mode="scaleToFit"/>
           <view class="little-view">
             <image class="little-img" src="{{little_msg}}" mode="scaleToFit"></image>
@@ -51,7 +51,7 @@
             <text class="little-msg mar-right">经典案例\n狗狗大人</text>
           </view> 
         </view>
-        <view class="action" bindtap="tapName">
+        <view class="action" bindtap="showPic">
           <image class="lable-img"  src="{{xu_img}}" mode="scaleToFit"/>
           <view class="little-view">
             <image class="little-img" src="{{little_pen}}" mode="scaleToFit"></image>
