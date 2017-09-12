@@ -1,0 +1,11 @@
+<!--showpic.wxml-->
+<import src="../templates/header/header.wxml" />
+<view class="page">
+  <template is="header" data="{{...header}}"></template>
+
+<view class="show-content">
+   <view class="classname" wx:for="{{picArray}}" wx:key="item" bindtap="tapname">
+      <image class="pic-img" catchtap="showImage" mode="aspectFit" data-origin="{{item}}" src="{{item}}"></image>
+   </view>
+</view>
+</view>

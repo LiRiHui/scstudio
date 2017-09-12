@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/content/content"
+    "pages/content/content",
+    "pages/article/article",
+    "pages/showpic/showpic"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -9,20 +11,23 @@
     "navigationBarTitleText": "星云创新工作室",
     "navigationBarTextStyle": "white"
   },
-  "tabBar":{
-    "color":"black",
-    "selectedColor":"green",
-    "backgroundColor":"white",
-    "list":[{
-      "text": "信息",
-      "pagePath": "pages/index/index",
-      "iconPath": "srcs/images/msg.png",
-      "selectedIconPath": "srcs/images/selected_msg.png"
-    },{
-      "text": "服务",
-      "pagePath":"pages/content/content",
-      "iconPath": "srcs/images/service.png",
-      "selectedIconPath": "srcs/images/selected_service.png"
-    }]
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "green",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "text": "信息",
+        "pagePath": "pages/index/index",
+        "iconPath": "srcs/images/msg.png",
+        "selectedIconPath": "srcs/images/selected_msg.png"
+      },
+      {
+        "text": "服务",
+        "pagePath": "pages/content/content",
+        "iconPath": "srcs/images/service.png",
+        "selectedIconPath": "srcs/images/selected_service.png"
+      }
+    ]
   }
 }

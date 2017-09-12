@@ -1,0 +1,18 @@
+<!--article.wxml-->
+<import src="../templates/header/header.wxml" />
+<view class="page">
+  <template is="header" data="{{...header}}"></template>
+  <view class="picture">
+    <view class="title_bg">
+      <image src="{{title_img}}"></image>
+      <text class="title">{{title}}</text>
+    </view>
+  </view>
+  <view class="tab-content">
+    <view class="introduction">
+        <text space="emsp">{{introduction}}</text>
+    <view class="date"><text space="emsp">{{date}}</text></view>
+    <view class="date"><text space="emsp">{{auther}}</text></view>
+    </view>
+  </view>
+</view>

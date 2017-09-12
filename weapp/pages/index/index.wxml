@@ -12,19 +12,19 @@
   <!-- banner-field end -->
 
   <view class="action-field">
-    <view class="action" bindtap="tapName">
+    <view class="action" bindtap="article">
       <image src="{{intro_img}}" mode="scaleToFit"/>
       <view>介绍</view>
     </view>
-    <view class="action" bindtap="tapName">
+    <view class="action" bindtap="showLocation">
       <image src="{{add_img}}" mode="scaleToFit"/>  
-      <view>导航</view>  
+      <view>地图</view>  
     </view>
-    <view class="action" bindtap="tapName">
+    <view class="action" bindtap="showCode">
       <image src="{{wechat_img}}" mode="scaleToFit"/>
       <view>微信</view>
     </view>
-    <view class="action" bindtap="tapName">
+    <view class="action" bindtap="phoneCall">
       <image src="{{phone_img}}" mode="scaleToFit"/>
       <view>电话</view>
     </view>
@@ -44,7 +44,7 @@
             <text class="little-msg">小程序\n能为门店带来什么</text>
           </view>
         </view>
-        <view class="action" bindtap="tapName">
+        <view class="action" bindtap="showPic">
           <image class="lable-img" src="{{cheng_img}}" mode="scaleToFit"/>  
           <view class="little-view">
             <image class="little-img" src="{{little_paper}}" mode="scaleToFit"></image>

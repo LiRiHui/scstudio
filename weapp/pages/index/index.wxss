@@ -36,6 +36,7 @@
   width: 185rpx;
   height: 150rpx;
   text-align: center;
+  font-size: 30rpx;
 }
 
 .promotion-field{
@@ -48,6 +49,7 @@
 .artcle-title{
   width: 100%;
   height: 100rpx;
+  margin-top: 20rpx;
 }
 
 .artcle-title image{
@@ -81,11 +83,11 @@
   height: 45rpx;
   float: left;
   margin-left: 10rpx;
-  margin-top: 10rpx;
+  margin-top: 15rpx;
 }
 
 .little-msg{
-  font-size: 0.6em;
+  font-size: 0.7em;
   vertical-align: -50%;
   margin-top: 8rpx;
   display: inline-block;

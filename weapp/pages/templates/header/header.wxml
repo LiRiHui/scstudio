@@ -1,0 +1,11 @@
+ <template name="header">
+ <view class="header">
+    <image class="menu" src="{{menu_url}}"></image>
+    <view class="intro">
+      <text>{{intro}}</text>
+    </view>
+    <view class="name">
+      <text>{{name}}</text>
+    </view>
+  </view>
+</template>

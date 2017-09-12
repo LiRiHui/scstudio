@@ -1,15 +1,23 @@
-// pages/content/content.js
+// showpic.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    sample_logo: "../../srcs/images/sample_logo.png",
-    price_img: "../../srcs/images/price.png",
-    file_img: "../../srcs/images/file.png",
-    file_key_img: "../../srcs/images/file_key.png",
-    about_img: "../../srcs/images/about.png",
+    header: {
+      menu_url: "/srcs/images/showpic_menu.png",
+      intro: "门店介绍",
+      name: "你的小程序名称"
+    },
+    picArray: [
+      "/srcs/images/showpic1.png",
+      "/srcs/images/showpic2.png",
+      "/srcs/images/showpic3.png",
+      "/srcs/images/showpic1.png",
+      "/srcs/images/showpic2.png",
+      "/srcs/images/showpic3.png",
+    ],
   },
 
   /**
@@ -66,5 +74,11 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  showImage: function (event) {
+    wx.previewImage({
+      urls: [event.currentTarget.dataset.origin]
+    });
   }
 })

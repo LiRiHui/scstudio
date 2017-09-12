@@ -1,0 +1,20 @@
+.page{
+  height: auto;
+  width: 100%;
+  background-color: #fffbf3;
+}
+
+.show-content{
+  height: auto;
+  padding-top: 10rpx;
+  padding-left: 35rpx;
+  padding-right: 50rpx;
+}
+
+.pic-img{
+  float: left;
+  height: 310rpx;
+  width: 310rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}

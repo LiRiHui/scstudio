@@ -22,6 +22,13 @@ Page({
     little_paper: "../../srcs/images/little_paper.png",
     little_pen: "../../srcs/images/little_pen.png",
     recommend_img: "../../srcs/images/recommend.png",
+    phoneNumber:"18502794699",
+    location: {
+      address: '湖北省武汉市武昌区',
+      latidude: 30.5908,
+      longitude: 114.3533,
+      name: '星云创新工作室'
+    },
   },
 
   /**
@@ -80,16 +87,47 @@ Page({
   
   },
 
-  phoneCall:function(){
+  article:function(){
+    wx.navigateTo({
+      url: '../article/article',
+    })
+  },
+
+  showPic: function () {
+    wx.navigateTo({
+      url: '../showpic/showpic',
+    })
+  },
+
+  showLocation: function (event) {
+    var location = this.data.location
+    wx.openLocation({
+      address: location.address,
+      name: location.name,
+      latitude: location.latidude,
+      longitude: location.longitude,
+    })
+  },
+
+  showCode: function () {
+    wx.previewImage({
+      urls: ["http://shangzhipin-1254063725.cossh.myqcloud.com/2code.jpg"],
+    })
+  },
+
+  phoneCall: function () {
+    var pn = this.data.phoneNumber
     wx.showActionSheet({
-      itemList: ["呼叫:18502794699"],
-      success:function(tapIndex){
-        if(tapIndex == 0){
+      itemList: ["呼叫 " + pn],
+      success: function (res) {
+        if (res.tapIndex == 0) {
           wx.makePhoneCall({
-            phoneNumber: '18502794699',
+            phoneNumber: pn,
           })
         }
+      }, fail: function (res) {
+        console.log(res)
       }
     })
-  }
+  },
 })
